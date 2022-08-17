@@ -15,28 +15,35 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/container.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-            <a class= "logo-text" href="#">WizClient</a>
-            <div class="nav-links">
-                <ul>
-                    <li class="active" ><a href="#">Home</a></li>
-                    <li><a href="./pages/download.html">Download</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                </ul>
-            </div>
-            <div class="menu-btn">
-                <div class="menu-btn__burger">
-                </div>
-            </div>
-        </nav>
-    </header>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a class= "logo-text" href="#">WizClient</a>
+                <div class="nav-links">
+                    <ul>
+                        <li class="active" ><a href="#">Home</a></li>
+                        <li><a href="/download" data-link>Download</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Store</a></li>
+                        
+                        <div class="login">
+                            <a href="#">Login</a>
+                            <a href="#">Register</a>      
+                        </div>
 
-    <div class="container">
-        <img class="logo" src="./assets/img/logo.png" alt="WizCLient Logo">
-    </div>
-</body>
-<script src="./js/app.js"></script>
+                    </ul>
+                </div>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger">
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <img class="logo" src="./assets/img/logo.png" alt="WizCLient Logo">
+        </div>
+        <script src="./js/app.js"></script>
+        <script src="js/static/index.js"></script>
+    </body>
 </html>
