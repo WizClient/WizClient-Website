@@ -101,6 +101,26 @@ header {
 }
 
 
+.login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+
+.login a {
+    padding: 3px;
+    background: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%);
+    border-radius:  50rem;
+    color:white;
+}
+
+.login a:nth-child(1) {
+    margin-bottom: 2px;
+}
+.login a:nth-child(2) {
+    margin-top: 2px;
+}
+
 
 
 
