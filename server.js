@@ -3,14 +3,18 @@ const path = require('path');
 
 const app = express();
 
-//app.use("/js", express.static(path.resolve(__dirname, "static")));
-app.use(express.static(path.join(__dirname, "global")))
+app.use("/static", express.static(path.resolve(__dirname, "static")));
 
-app.get("/", (req, res) => {
+app.use("/js", express.static(path.resolve(__dirname, "js")));
+app.use("/css", express.static(path.resolve(__dirname, "css")));
+app.use("/assets", express.static(path.resolve(__dirname, "assets")));
+
+
+app.get("/*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "index.html"))
 });
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log("Server running...")
 })
 
