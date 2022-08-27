@@ -4,6 +4,7 @@ export default class extends AbstractView {
     constructor() {
         super();
         this.setTitle("WizClient - Store")
+        this.setActive(4)
     }
 
     async getHtml() {

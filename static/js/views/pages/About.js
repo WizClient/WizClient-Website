@@ -4,11 +4,12 @@ export default class extends AbstractView {
     constructor() {
         super();
         this.setTitle("WizClient - About")
+        this.setActive(3)
     }
 
     async getHtml() {
         return `
-            <h1>About</h1>
+            <p class="wip">Site Under Construction</p>
         `;
     }
 }
