@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass-container": "sass --watch sass/container.scss css/container.css",
+    "sass-navbar": "sass --watch sass/navbar.scss css/navbar.css",
+    "sass-style": "sass --watch sass/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,7 @@
   },
   "homepage": "https://github.com/WizClient/WizClient-Website#readme",
   "dependencies": {
-    "express": "^4.18.1"
-  },
-  "devDependencies": {
+    "express": "^4.18.1",
     "sass": "^1.54.5"
   }
 }
