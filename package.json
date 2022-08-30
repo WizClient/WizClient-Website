@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "nodemon server.js",
+    "launch": "nodemon server.js",
     "sass-container": "sass --watch sass/container.scss css/container.css",
     "sass-navbar": "sass --watch sass/navbar.scss css/navbar.css",
     "sass-style": "sass --watch sass/style.scss css/style.css"
