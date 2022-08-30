@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "launch": "nodemon server.js",
+    "build": "webpack --config webpack.config.js",
     "sass-container": "sass --watch sass/container.scss css/container.css",
     "sass-navbar": "sass --watch sass/navbar.scss css/navbar.css",
     "sass-style": "sass --watch sass/style.scss css/style.css"
