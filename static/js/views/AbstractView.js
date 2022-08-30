@@ -12,7 +12,7 @@ export default class {
     }
 
     async setActive(element) {
-        document.querySelectorAll(".nav-links ul li").forEach(e => e.classList.remove("active"));
-        document.querySelector(`.nav-links ul li:nth-child(${element})`).classList.add("active");
+        document.querySelectorAll(".navbar__links ul li").forEach(e => e.classList.remove("active"));
+        document.querySelector(`.navbar__links ul li:nth-child(${element})`).classList.add("active");
     }
 }
