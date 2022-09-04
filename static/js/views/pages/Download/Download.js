@@ -1,7 +1,8 @@
-import AbstractView from "../AbstractView.js";
-//var fs = require('fs');
+import AbstractView from "../../AbstractView.js";
+
 
 export default class extends AbstractView {
+    
     constructor() {
         super();
         this.setTitle("WizClient - Download")
@@ -9,9 +10,11 @@ export default class extends AbstractView {
     }
 
     async getHtml() {
-        //const u = fs.readFileSync('./Download.html')
+        
+        console.log(fs.readFileSync("./Download.html", "utf-8"));
+        
         return `
-            <p class="wip">Site Under Construction</p>
+            <p class="wip">Site Under Construction - Download</p>
         `;
     }
 }

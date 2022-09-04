@@ -1,5 +1,5 @@
 import Home from "./views/pages/Home.js";
-import Download from "./views/pages/Download.js";
+import Download from "./views/pages/Download/Download.js";
 import About from "./views/pages/About.js";
 import Store from "./views/pages/Store.js";
 
