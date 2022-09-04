@@ -1,4 +1,5 @@
-import AbstractView from "../AbstractView.js";
+import AbstractView from "../../AbstractView.js";
+var fs = require('fs');
 
 export default class extends AbstractView {
     constructor() {
@@ -8,6 +9,7 @@ export default class extends AbstractView {
     }
 
     async getHtml() {
+        //const u = fs.readFileSync('./Download.html')
         return `
             <p class="wip">Site Under Construction</p>
         `;
