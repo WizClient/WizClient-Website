@@ -1,5 +1,5 @@
-import AbstractView from "../../AbstractView.js";
-var fs = require('fs');
+import AbstractView from "../AbstractView.js";
+//var fs = require('fs');
 
 export default class extends AbstractView {
     constructor() {
