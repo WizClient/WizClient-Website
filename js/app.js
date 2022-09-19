@@ -1,8 +1,9 @@
 const menuBtn = document.querySelector('.menu-btn');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.querySelector('.navbar__links');
 let menuOpen = false;
 
-menuBtn.addEventListener('click', () => {
+
+menuBtn.addEventListener('click', () => {    
     if (!menuOpen) {
         menuBtn.classList.add('open');
         menuOpen = true

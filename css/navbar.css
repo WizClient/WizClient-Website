@@ -88,7 +88,10 @@ header {
   text-align: center;
 }
 .login a {
-  padding: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background: linear-gradient(41deg, rgb(0, 175, 235) 29%, rgb(161, 83, 243) 75%);
   border-radius: 50rem;
   color: white;
@@ -98,6 +101,9 @@ header {
 }
 .login a:nth-child(2) {
   margin-top: 2px;
+}
+.login a:hover {
+  transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 900px) {
@@ -137,6 +143,9 @@ header {
   }
   .menu-btn {
     display: flex;
+  }
+  .container {
+    margin-top: 130px;
   }
 }
 

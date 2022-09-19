@@ -1,5 +1,14 @@
 .container {
   height: 100vh;
+  width: 100vw;
+  overscroll-behavior-y: none;
+  overflow: auto;
+}
+
+.separate {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
 }
 
 .test {

@@ -1,6 +1,5 @@
 import AbstractView from "../../AbstractView.js";
 
-
 export default class extends AbstractView {
     
     constructor() {
@@ -10,8 +9,6 @@ export default class extends AbstractView {
     }
 
     async getHtml() {
-        
-        console.log(fs.readFileSync("./Download.html", "utf-8"));
         
         return `
             <p class="wip">Site Under Construction - Download</p>

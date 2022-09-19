@@ -100,7 +100,11 @@ header {
     text-align: center;
 
     a {
-        padding: 3px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
         background: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%);
         border-radius:  50rem;
         color:white;
@@ -111,6 +115,10 @@ header {
         
         &:nth-child(2) {
             margin-top: 2px;
+        }
+
+        &:hover {
+            transition-duration: .3s;
         }
     }
 } 
@@ -159,5 +167,9 @@ header {
 
     .menu-btn {
         display: flex;
+    }
+
+    .container {
+        margin-top: 130px;
     }
 }
