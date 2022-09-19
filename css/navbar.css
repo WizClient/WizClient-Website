@@ -88,22 +88,41 @@ header {
   text-align: center;
 }
 .login a {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background: linear-gradient(41deg, rgb(0, 175, 235) 29%, rgb(161, 83, 243) 75%);
-  border-radius: 50rem;
-  color: white;
+  padding: 5px 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0px;
+  background: transparent;
+  position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 0px 0px rgba(143, 64, 248, 0.5), 0px 0px 0px 0px rgba(39, 200, 255, 0.5);
+}
+.login a::after {
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background-image: linear-gradient(41deg, rgb(0, 175, 235) 29%, rgb(161, 83, 243) 75%);
+  z-index: -1;
+  transition: all 0.5s;
+}
+.login a:hover::after {
+  transform: rotate(150deg);
+}
+.login a:hover {
+  transform: translate(0, -2px);
+  box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.25), -10px 10px 25px 0px rgba(39, 200, 255, 0.25);
 }
 .login a:nth-child(1) {
   margin-bottom: 2px;
 }
 .login a:nth-child(2) {
   margin-top: 2px;
-}
-.login a:hover {
-  transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 900px) {

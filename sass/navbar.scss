@@ -100,14 +100,40 @@ header {
     text-align: center;
 
     a {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 5px 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border: 0px;
+        background: transparent;
+        position: relative;
+        transition: all .2s;
+        overflow: hidden;
+        color: #fff;
+        border-radius: 30px;
+        box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
 
-        background: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%);
-        border-radius:  50rem;
-        color:white;
+
+        &::after {
+            content: '';
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -50px;
+            left: -100px;
+            background-image: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%);
+            z-index: -1;
+            transition: all .5s;
+        }
+
+        &:hover::after {
+            transform: rotate(150deg);
+        }
+
+        &:hover {
+            transform: translate(0,-2px);
+            box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+          }
+
 
         &:nth-child(1) {
             margin-bottom: 2px;
@@ -115,10 +141,6 @@ header {
         
         &:nth-child(2) {
             margin-top: 2px;
-        }
-
-        &:hover {
-            transition-duration: .3s;
         }
     }
 } 
