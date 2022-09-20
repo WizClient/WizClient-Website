@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "launch": "nodemon server.js",
+    "sass-loader": "sass --watch sass/loader.scss css/loader.css",
     "sass-container": "sass --watch sass/container.scss css/container.css",
     "sass-navbar": "sass --watch sass/navbar.scss css/navbar.css",
     "sass-style": "sass --watch sass/style.scss css/style.css"
