@@ -1,8 +1,6 @@
 header {
     height: auto;
     width: 100%;
-    /*background-image: url("../assets/img/background.png");
-    background-size: cover;*/
 }
 
 .navbar {
@@ -13,28 +11,44 @@ header {
     box-sizing: border-box;
     align-items: center;
 
-    &__links ul {
-        display: flex;
-        align-items: center;
+    &__links {
+        ul {
+            display: flex;
+            align-items: center;
 
-        li {
-            margin: 0 25px;
+            li {
+                margin: 0 25px;
+    
+                &.active a {
 
-            &.active a {
-                font-size: 20px;
-                background: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+
+                    &:hover {
+                        //text-shadow: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%) 0px 0px 10px;
+                        text-shadow: none;
+                    }
+
+                    font-size: 20px; 
+                    background: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+
+                }
             }
         }
-    }
 
-    a {
-        color: white;
-        font-size: 20px;
+        &-button {
+            color: white;
+            font-size: 20px;
+            transition-duration: 0.2s ;
+            &:hover {
+                text-shadow: 0 0 10px #fff;
+            }
+        }
+
     }
 
     .logo-text {
+        color: white;
         font-size: 2em;
         font-weight: bold;
     }
@@ -99,7 +113,7 @@ header {
     flex-direction: column;
     text-align: center;
 
-    a {
+    &__button {
         padding: 5px 15px;
         font-size: 1.5rem;
         cursor: pointer;
@@ -130,9 +144,9 @@ header {
         }
 
         &:hover {
-            transform: translate(0,-2px);
+            transform: scale(1.05);
             box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
-          }
+        }
 
 
         &:nth-child(1) {
@@ -172,6 +186,7 @@ header {
     
             &.mobile-menu {
                 margin-left: 0;
+                position: fixed;
             }
     
             ul {
@@ -189,6 +204,10 @@ header {
 
     .menu-btn {
         display: flex;
+
+        &.open {
+            position: fixed;
+        }
     }
 
     .container {

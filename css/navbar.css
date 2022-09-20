@@ -1,8 +1,6 @@
 header {
   height: auto;
   width: 100%;
-  /*background-image: url("../assets/img/background.png");
-  background-size: cover;*/
 }
 
 .navbar {
@@ -26,11 +24,19 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.navbar a {
+.navbar__links ul li.active a:hover {
+  text-shadow: none;
+}
+.navbar__links-button {
   color: white;
   font-size: 20px;
+  transition-duration: 0.2s;
+}
+.navbar__links-button:hover {
+  text-shadow: 0 0 10px #fff;
 }
 .navbar .logo-text {
+  color: white;
   font-size: 2em;
   font-weight: bold;
 }
@@ -87,7 +93,7 @@ header {
   flex-direction: column;
   text-align: center;
 }
-.login a {
+.login__button {
   padding: 5px 15px;
   font-size: 1.5rem;
   cursor: pointer;
@@ -100,7 +106,7 @@ header {
   border-radius: 30px;
   box-shadow: 0px 0px 0px 0px rgba(143, 64, 248, 0.5), 0px 0px 0px 0px rgba(39, 200, 255, 0.5);
 }
-.login a::after {
+.login__button::after {
   content: "";
   width: 400px;
   height: 400px;
@@ -111,17 +117,17 @@ header {
   z-index: -1;
   transition: all 0.5s;
 }
-.login a:hover::after {
+.login__button:hover::after {
   transform: rotate(150deg);
 }
-.login a:hover {
-  transform: translate(0, -2px);
+.login__button:hover {
+  transform: scale(1.05);
   box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, 0.25), -10px 10px 25px 0px rgba(39, 200, 255, 0.25);
 }
-.login a:nth-child(1) {
+.login__button:nth-child(1) {
   margin-bottom: 2px;
 }
-.login a:nth-child(2) {
+.login__button:nth-child(2) {
   margin-top: 2px;
 }
 
@@ -150,6 +156,7 @@ header {
   }
   .navbar__links.mobile-menu {
     margin-left: 0;
+    position: fixed;
   }
   .navbar__links ul {
     display: flex;
@@ -162,6 +169,9 @@ header {
   }
   .menu-btn {
     display: flex;
+  }
+  .menu-btn.open {
+    position: fixed;
   }
   .container {
     margin-top: 130px;
