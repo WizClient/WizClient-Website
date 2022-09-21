@@ -6,9 +6,12 @@
 }
 
 body {
+  height: 100%;
+  width: 100%;
   font-family: "Nunito", sans-serif;
-  background-image: url("../assets/img/background.png");
-  background-size: auto;
+  background: rgb(0, 47, 86);
+  background: linear-gradient(150deg, rgb(0, 47, 86) 0%, rgb(0, 2, 14) 100%);
+  background-size: contain;
 }
 
 ::-webkit-scrollbar {

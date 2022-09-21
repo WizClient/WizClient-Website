@@ -6,10 +6,13 @@
 }
 
 body {
+    height: 100%;
+    width: 100%;
     font-family: 'Nunito', sans-serif;
-    background-image: url("../assets/img/background.png");
-    //background: linear-gradient(41deg, rgb(0, 175, 235) 29%, rgb(161, 83, 243) 75%);;
-    background-size: auto;
+    background: rgb(0,47,86);
+    background: linear-gradient(150deg, rgba(0,47,86,1) 0%, rgba(0,2,14,1) 100%);
+    //background-image: url("../assets/img/background.png");
+    background-size: contain;
 }
 
 ::-webkit-scrollbar {
