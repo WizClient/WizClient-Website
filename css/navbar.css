@@ -1,8 +1,3 @@
-header {
-  height: auto;
-  width: 100%;
-}
-
 .navbar {
   padding: 30px;
   display: flex;
@@ -139,6 +134,7 @@ header {
     position: absolute;
     top: 50px;
     left: 50px;
+    transform: translateY(-6px);
   }
   .navbar__links {
     top: 0;
