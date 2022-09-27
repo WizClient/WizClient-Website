@@ -19,21 +19,22 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.navbar__links ul li.active a:hover {
-  text-shadow: none;
-}
 .navbar__links-button {
   color: white;
   font-size: 20px;
   transition-duration: 0.2s;
 }
 .navbar__links-button:hover {
-  text-shadow: 0 0 10px #fff;
+  color: rgb(172, 172, 172);
 }
 .navbar .logo-text {
   color: white;
   font-size: 2em;
   font-weight: bold;
+  transition: 0.4s ease-in-out transform;
+}
+.navbar .logo-text:hover {
+  transform: translateY(-20px);
 }
 
 .menu-btn {

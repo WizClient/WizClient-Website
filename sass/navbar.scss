@@ -16,12 +16,6 @@
     
                 &.active a {
 
-
-                    &:hover {
-                        //text-shadow: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%) 0px 0px 10px;
-                        text-shadow: none;
-                    }
-
                     font-size: 20px; 
                     background: linear-gradient(41deg, rgba(0,175,235,1) 29%, rgba(161,83,243,1) 75%);
                     -webkit-background-clip: text;
@@ -36,7 +30,7 @@
             font-size: 20px;
             transition-duration: 0.2s ;
             &:hover {
-                text-shadow: 0 0 10px #fff;
+                color: rgb(172, 172, 172);
             }
         }
 
@@ -46,6 +40,13 @@
         color: white;
         font-size: 2em;
         font-weight: bold;
+
+        transition: 0.4s ease-in-out transform;
+        
+        &:hover {
+            transform: translateY(-20px);
+            
+        }
     }
 }
 
