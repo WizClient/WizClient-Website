@@ -27,14 +27,35 @@
 .navbar__links-button:hover {
   color: rgb(172, 172, 172);
 }
-.navbar .logo-text {
+.navbar a .logo-container {
+  height: 89.33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.navbar a .logo-container:hover .logo-container__logo-text {
+  transform: translateY(-42px);
+  opacity: 0;
+}
+.navbar a .logo-container:hover .logo-container__logo-image {
+  transform: translateY(-38px);
+  opacity: 100;
+}
+.navbar a .logo-container__logo-text {
   color: white;
   font-size: 2em;
   font-weight: bold;
-  transition: 0.4s ease-in-out transform;
+  transform: translateY(21.5px);
+  transition: all ease-in-out 0.7s;
 }
-.navbar .logo-text:hover {
-  transform: translateY(-20px);
+.navbar a .logo-container__logo-image {
+  height: auto;
+  width: 149px;
+  transform: translateY(50px);
+  transition: all ease-in-out 0.7s;
+  opacity: 0;
 }
 
 .menu-btn {
