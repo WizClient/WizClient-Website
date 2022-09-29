@@ -35,18 +35,50 @@
         }
 
     }
+    
 
-    .logo-text {
-        color: white;
-        font-size: 2em;
-        font-weight: bold;
+    a .logo-container {
 
-        transition: 0.4s ease-in-out transform;
-        
-        &:hover {
-            transform: translateY(-20px);
-            
+        height: 89.33px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        cursor: pointer;
+
+        //&:hover, &__logo-text {
+        //    transform: translateY(-100px);
+        //}
+
+        &:hover .logo-container__logo-text {
+            transform: translateY(-42px);
+            opacity: 0;
         }
+
+        &:hover .logo-container__logo-image {
+            transform: translateY(-38px);
+            opacity: 100;
+        }
+
+        &__logo-text {
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            transform: translateY(21.5px);
+            transition: all ease-in-out 0.7s;
+        }
+
+        &__logo-image {
+            
+            height: auto;
+            width: 149px;
+            transform: translateY(50px);
+            transition: all ease-in-out 0.7s;
+            opacity: 0;
+
+        }
+    
+
     }
 }
 
