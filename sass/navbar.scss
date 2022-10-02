@@ -37,7 +37,7 @@
     }
     
 
-    a .logo-container {
+    .logo-link .logo-container {
 
         height: 89.33px;
         display: flex;
@@ -45,10 +45,6 @@
         align-items: center;
         overflow: hidden;
         cursor: pointer;
-
-        //&:hover, &__logo-text {
-        //    transform: translateY(-100px);
-        //}
 
         &:hover .logo-container__logo-text {
             transform: translateY(-42px);
@@ -192,11 +188,24 @@
     .navbar {
         padding: 0;
 
-        .logo-text {
-            position: absolute;
-            top: 50px;
-            left: 50px;
-            transform: translateY(-6px);
+        height: 130px;
+
+        .logo-link {
+
+            margin-left: 50px;
+
+            .logo-container {
+
+                &__logo-text {
+                    position: absolute;
+                    top: 50px;
+                    left: 50px;
+                    transform: translateY(-6px);
+    
+                }
+    
+                pointer-events: none;
+            }
         }
         
         &__links {
@@ -228,6 +237,7 @@
                     font-size: 1.5em;
                 }
             }
+
         }
     }
 

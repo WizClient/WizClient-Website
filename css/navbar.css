@@ -27,7 +27,7 @@
 .navbar__links-button:hover {
   color: rgb(172, 172, 172);
 }
-.navbar a .logo-container {
+.navbar .logo-link .logo-container {
   height: 89.33px;
   display: flex;
   flex-direction: column;
@@ -35,22 +35,22 @@
   overflow: hidden;
   cursor: pointer;
 }
-.navbar a .logo-container:hover .logo-container__logo-text {
+.navbar .logo-link .logo-container:hover .logo-container__logo-text {
   transform: translateY(-42px);
   opacity: 0;
 }
-.navbar a .logo-container:hover .logo-container__logo-image {
+.navbar .logo-link .logo-container:hover .logo-container__logo-image {
   transform: translateY(-38px);
   opacity: 100;
 }
-.navbar a .logo-container__logo-text {
+.navbar .logo-link .logo-container__logo-text {
   color: white;
   font-size: 2em;
   font-weight: bold;
   transform: translateY(21.5px);
   transition: all ease-in-out 0.7s;
 }
-.navbar a .logo-container__logo-image {
+.navbar .logo-link .logo-container__logo-image {
   height: auto;
   width: 149px;
   transform: translateY(50px);
@@ -151,8 +151,15 @@
 @media screen and (max-width: 900px) {
   .navbar {
     padding: 0;
+    height: 130px;
   }
-  .navbar .logo-text {
+  .navbar .logo-link {
+    margin-left: 50px;
+  }
+  .navbar .logo-link .logo-container {
+    pointer-events: none;
+  }
+  .navbar .logo-link .logo-container__logo-text {
     position: absolute;
     top: 50px;
     left: 50px;
