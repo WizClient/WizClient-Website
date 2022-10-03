@@ -30,4 +30,30 @@
   font-size: 50px;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgb(40, 40, 40);
+}
+.footer-text {
+  color: #fff;
+  grid-column: 2;
+  text-align: center;
+}
+.footer-links {
+  text-align: right;
+  margin-right: 10px;
+}
+.footer-links__link {
+  color: #fff;
+  margin-left: 3px;
+  margin-right: 3px;
+  transition-duration: 0.2s;
+}
+.footer-links__link:hover {
+  color: rgb(172, 172, 172);
+}
+
 /*# sourceMappingURL=container.css.map */

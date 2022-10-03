@@ -46,10 +46,6 @@
         overflow: hidden;
         cursor: pointer;
 
-        //&:hover, &__logo-text {
-        //    transform: translateY(-100px);
-        //}
-
         &:hover .logo-container__logo-text {
             transform: translateY(-42px);
             opacity: 0;
